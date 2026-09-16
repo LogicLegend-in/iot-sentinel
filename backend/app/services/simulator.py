@@ -8,7 +8,7 @@ import asyncio
 from datetime import datetime, timezone
 import math
 import random
-from typing import Callable, Dict, List, Optional
+from typing import Any, Callable, Dict, List, Optional
 from ..models.schemas import Device, DeviceType, TelemetryIngest
 
 
