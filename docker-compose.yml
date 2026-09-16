@@ -1,0 +1,12 @@
+﻿services:
+  iot-sentinel:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: logiclegend-iot-sentinel
+    ports:
+      - "8001:8001"
+    environment:
+      - PORT=8001
+      - ENVIRONMENT=development
+    restart: unless-stopped
